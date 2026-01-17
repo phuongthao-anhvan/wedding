@@ -1,12 +1,11 @@
 // AOS - Tối ưu cho mobile
 AOS.init({
-  duration: 800,
+  duration: window.innerWidth < 768 ? 400 : 800, // Ngắn hơn trên mobile
   once: true,
   easing: 'ease-out',
-  // Disable AOS on mobile để tránh lag
-  disable: function() {
-    return window.innerWidth < 768;
-  }
+  offset: window.innerWidth < 768 ? 20 : 120, // Trigger sớm hơn trên mobile  
+  delay: 0,
+  mirror: false
 });
 //countdown - tối ưu cho mobile
 const weddingDate = new Date("2026-01-22T09:30:00").getTime();
