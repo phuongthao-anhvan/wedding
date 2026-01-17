@@ -1,0 +1,361 @@
+<!--https://script.google.com/macros/s/AKfycby_bjRNtOON6ntCPz5alyNHDK9Y6qYFguLq6apGNF6NHLUTztT6LfCK-P5YOvQld1DI7g/exec-->
+<!--AKfycby_bjRNtOON6ntCPz5alyNHDK9Y6qYFguLq6apGNF6NHLUTztT6LfCK-P5YOvQld1DI7g-->
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thiệp Cưới Online</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+ <!-- 🔹 MÀN HÌNH CHUẨN BỊ THIỆP -->
+<div id="loading-screen" >
+    <div class="card">
+        <h2  style="
+  font-family: 'UVN Hoa Tay 1', cursive;
+  color: #b76e79;
+  letter-spacing: 2px;
+  font-size: 28px;
+">💍 Anh Văn & Phương Thảo</h1>
+        <p class="loading-text">Đang chuẩn bị thiệp mời...</p>
+
+        <div class="progress-wrap">
+            <div id="progress-bar"></div>
+        </div>
+        <span id="progress-percent">0%</span>
+
+        <button id="open-card" style="display:none;">💌 Mở Thiệp</button>
+    </div>
+</div>
+
+
+<!-- HEADER -->
+<header class="hero">
+  <div class="overlay"></div>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">❤️ V & T</div>
+    <ul class="menu">
+      <li>Trang chủ</li>
+      <li>Sự kiện</li>
+      <li>Xác nhận</li>
+      <li>Thư viện ảnh</li>
+    </ul>
+    <div class="hamburger">☰</div>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="hero-content">
+    <h1 data-aos="zoom-in">Anh Văn & Phương Thảo</h1>
+
+    <div class="save-date" data-aos="fade-up" data-aos-delay="300">
+      <span>SAVE THE DATE</span>
+      <strong>22 • 01 • 2026</strong>
+    </div>
+  </div>
+
+  <!-- MUSIC -->
+<!-- 🔹 NHẠC -->
+<audio id="bg-music" loop>
+    <source src="mp3/nhacnen.mp3" type="audio/mpeg">
+</audio>
+
+<!-- 🔹 NÚT PAUSE / PLAY -->
+<button id="music-btn">⏸</button>
+
+</header>
+
+
+
+<!-- 2 bên gia đình-->
+ <section class="family-section">
+  <div class="family-quote" data-aos="fade-up">
+    “Hôn nhân là chuyện cả đời. Yêu người vừa ý, cưới người mình thương...”
+  </div>
+
+  <div class="family-parents" data-aos="fade-up" data-aos-delay="200">
+    <div class="family-col">
+      <h3>NHÀ TRAI</h3>
+      <p>ÔNG: NGUYỄN VĂN KÝ</p>
+      <p>BÀ: LÊ THỊ THANH</p>
+      <p>Số nhà 1, Tiểu Khu Tập Cát 2, xã Nông Cống</p>
+      <p>Thanh Hóa</p>
+    </div>
+
+    <div class="family-col">
+      <h3>NHÀ GÁI</h3>
+      <p>ÔNG: TRẦN VĂN ĐOÀN</p>
+      <p>BÀ: TRỊNH THỊ THU</p>
+      <p>Số nhà 68, Côn Cương 1,xã Thắng Lợi</p>
+      <p>Thanh Hóa</p>
+    </div>
+  </div>
+
+  <div class="family-heart" data-aos="zoom-in">
+    ❤
+  </div>
+
+  <div class="family-couple">
+    <div class="person" data-aos="fade-right">
+      <span class="role">Chú rể</span>
+      <h2 class="name groom">Anh Văn</h2>
+      <div class="photo">
+        <img src="img/re.jpg" alt="Chú rể">
+      </div>
+    </div>
+
+    <div class="person" data-aos="fade-left">
+      <span class="role">Cô dâu</span>
+      <h2 class="name bride">Phương Thảo</h2>
+      <div class="photo">
+        <img src="img/dau.jpg" alt="Cô dâu">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end 2 bên gia đình -->
+<!--Time line-->
+<section class="wedding-timeline">
+  <h2 class="timeline-title" data-aos="fade-up">HÀNH TRÌNH HÔN LỄ</h2>
+
+  <div class="timeline">
+    <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+      <span class="dot"></span>
+      <h3>LỄ ĂN HỎI</h3>
+      <p>09:00 • 20.01.2026</p>
+    </div>
+
+    <div class="timeline-item active" data-aos="fade-up" data-aos-delay="200">
+      <span class="dot"></span>
+      <h3>BỮA CƠM THÂN MẬT</h3>
+      <p>17:00 • 21.01.2026</p>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+      <span class="dot"></span>
+      <h3>LỄ THÀNH HÔN</h3>
+      <p>09:30 • 22.01.2026</p>
+    </div>
+  </div>
+</section>
+<!--end time line-->
+<!--countdown-->
+<section class="countdown-section">
+  <h2 data-aos="fade-up">ĐẾM NGƯỢC NGÀY TRỌNG ĐẠI</h2>
+
+  <div class="countdown" data-aos="zoom-in">
+    <div><span id="days">0</span><small>Ngày</small></div>
+    <div><span id="hours">0</span><small>Giờ</small></div>
+    <div><span id="minutes">0</span><small>Phút</small></div>
+    <div><span id="seconds">0</span><small>Giây</small></div>
+  </div>
+</section>
+
+<!--end countdown-->
+<!-- mời tiệc -->
+ <section class="wedding-invitation">
+  <div class="invitation-inner">
+
+    <p class="invite-top" data-aos="fade-up">
+      Trân trọng kính mời anh/chị tới dự bữa cơm thân mật chung vui cùng gia đình chúng tôi
+    </p>
+
+    <h1 class="invite-names" data-aos="fade-up" data-aos-delay="150">
+      ANH VĂN
+      <span class="and">and</span>
+      PHƯƠNG THẢO
+    </h1>
+
+    <p class="invite-note" data-aos="fade-up" data-aos-delay="300">
+      Tiệc cưới nhà gái được tổ chức vào lúc:
+    </p>
+
+    <div class="invite-time" data-aos="fade-up" data-aos-delay="450">
+      17:00 – THỨ TƯ
+    </div>
+
+    <div class="invite-date" data-aos="fade-up" data-aos-delay="600">
+      21.01.2026
+    </div>
+
+    <p class="invite-lunar" data-aos="fade-up" data-aos-delay="750">
+      (Tức ngày 03 tháng 12 năm Ất Tỵ)
+    </p>
+
+    <p class="invite-location-label" data-aos="fade-up" data-aos-delay="900">
+      Địa điểm:
+    </p>
+
+    <h3 class="invite-location" data-aos="fade-up" data-aos-delay="1050">
+      TẠI TƯ GIA NHÀ GÁI
+    </h3>
+
+    <p class="invite-address" data-aos="fade-up" data-aos-delay="1200">
+      Số nhà 68, Côn Cương 1,xã Thắng Lợi<br>
+      Thanh Hóa
+    </p>
+
+    <a href="https://maps.app.goo.gl/UYTt4DimMFJca4qi6" class="invite-map" data-aos="fade-up" data-aos-delay="1350" target="_blank">
+    📍 CHỈ ĐƯỜNG </br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d212.48965362726165!2d105.68469475488102!3d19.672591792513632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1svi!2s!4v1768444575271!5m2!1svi!2s" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </a>
+</section>
+
+ <!--end mời tiệc-->
+
+ <!-- lễ thành hôn-->
+  <section class="ceremony-section">
+  <div class="ceremony-inner">
+
+    <div class="ceremony-flower" data-aos="fade-down">
+      ❀
+    </div>
+
+    <p class="ceremony-title" data-aos="fade-up">
+      LỄ THÀNH HÔN ĐƯỢC TỔ CHỨC
+    </p>
+
+    <p class="ceremony-time" data-aos="fade-up" data-aos-delay="150">
+      VÀO LÚC 09 GIỜ 30 PHÚT
+    </p>
+
+    <p class="ceremony-day" data-aos="fade-up" data-aos-delay="300">
+      THỨ NĂM
+    </p>
+
+    <div class="ceremony-date" data-aos="fade-up" data-aos-delay="450">
+      <span>THÁNG 1</span>
+      <strong>22</strong>
+      <span>NĂM 2026</span>
+    </div>
+
+    <p class="ceremony-lunar" data-aos="fade-up" data-aos-delay="600">
+      (Tức ngày 04 tháng 12 năm Ất Tỵ)
+    </p>
+
+    <div class="ceremony-rings" data-aos="zoom-in" data-aos-delay="750">
+      💍
+    </div>
+
+    <h3 class="ceremony-place" data-aos="fade-up" data-aos-delay="900">
+      TẠI TƯ GIA NHÀ TRAI
+    </h3>
+
+    <p class="ceremony-address" data-aos="fade-up" data-aos-delay="1050">
+      Số 1 – Tiểu Khu Tập Cát 2, xã Nông Cống<br>
+      Thanh Hóa
+    </p>
+
+    <a href="https://maps.app.goo.gl/pwReATEkcttVkarVA" class="ceremony-map" data-aos="fade-up" data-aos-delay="1200" target="_blank">
+      📍 CHỈ ĐƯỜNG </br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d469.72883792253185!2d105.64881059929535!3d19.63453429510218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1767711362430!5m2!1svi!2s" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </a>
+
+  </div>
+</section>
+
+  <!--end lễ thành hôn-->
+  <!--lịch-->
+  <section class="calendar-section">
+  <div class="calendar">
+
+    <h2>2026</h2>
+    <h3>January</h3>
+
+    <div class="calendar-header">
+      <span>THỨ 2</span><span>THỨ 3</span><span>THỨ 4</span>
+      <span>THỨ 5</span><span>THỨ 6</span><span>THỨ 7</span><span>CN</span>
+    </div>
+
+    <div class="calendar-body">
+      <span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span>
+      <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
+      <span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span>
+      <span>19</span><span>20</span><span>21</span><span class="wedding-day">22</span><span>23</span><span>24</span><span>25</span>
+      <span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+    </div>
+
+  </div>
+</section>
+<!--end lịch-->
+
+<!-- footer anh -->
+ <section class="love-album">
+  <h2 class="love-title" data-aos="fade-up">ALBUM OF LOVE</h2>
+
+  <div class="love-grid">
+    <img src="img/anh1.jpg" class="love-img" alt="">
+    <img src="img/anh2.jpg" class="love-img" alt="">
+    <img src="img/anh3.jpg" class="love-img" alt="">
+      <img src="img/anh16.jpg" class="love-img" alt="">
+    <img src="img/anh17.jpg" class="love-img" alt="">
+    <img src="img/anh18.jpg" class="love-img" alt="">
+    <img src="img/anh4.jpg" class="love-img" alt="">
+    <img src="img/anh5.jpg" class="love-img" alt="">
+    <img src="img/anh6.jpg" class="love-img" alt="">
+    <img src="img/anh7.jpg" class="love-img" alt="">
+    <img src="img/anh16.jpg" class="love-img" alt="">
+    <img src="img/anh8.jpg" class="love-img" alt="">
+    <img src="img/anh9.jpg" class="love-img" alt="">
+    <img src="img/anh10.jpg" class="love-img" alt="">
+    <img src="img/anh11.jpg" class="love-img" alt="">
+    <img src="img/anh12.jpg" class="love-img" alt="">
+    <img src="img/anh13.jpg" class="love-img" alt="">
+    <img src="img/anh14.jpg" class="love-img" alt="">
+    <img src="img/anh15.jpg" class="love-img" alt="">
+
+
+   
+  </div>
+</section>
+
+<div class="album-lightbox" id="albumLightbox">
+  <span class="lb-close">×</span>
+  <span class="lb-prev">‹</span>
+  <span class="lb-next">›</span>
+  <img class="lb-image" src="">
+</div>
+
+<footer class="wedding-footer" data-aos="fade-up">
+
+  <div class="footer-heart">❤</div>
+
+  <p class="footer-thank">
+    Vợ chồng chúng tôi xin chân thành cảm ơn
+  </p>
+
+  <p class="footer-message">
+    Quý quan khách đã dành thời gian quý báu<br>
+    đến tham dự và chúc phúc cho hôn lễ của chúng tôi
+  </p>
+
+  <h3 class="footer-names">
+    Anh Văn & Phương Thảo
+  </h3>
+
+  <p class="footer-date">
+    💍 Trân trọng – 2026 💍
+  </p>
+</footer>
+
+<div id="hearts-container"></div>
+
+<!-- end footer anh-->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
