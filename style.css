@@ -187,8 +187,6 @@ body {
     .save-date {
         position: absolute;
         bottom: 65px;
-      
-        transform: translateX(-50%);
         margin-bottom: 0;
         padding: 15px 25px;
         width: 90%;
